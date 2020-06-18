@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
+<!-- 引入jstl -->
+<%@include file="common/tag.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,7 +42,7 @@
                                 <fmt:formatDate value="${sk.createTime}" pattern="yyy-MM-dd HH:mm:ss"/>
                             </td>
                             <td>
-                                <a class="btn btn-info" href="${basePath}seckill/${sk.seckillId}/detail" target="_blank">link</a>
+                                <a class="btn btn-info" href="/seckill/${sk.seckillId}/detail" target="_blank">link</a>
                             </td>
                         </tr>
                     </c:forEach>
